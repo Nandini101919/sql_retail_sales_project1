@@ -1,4 +1,5 @@
 #Retail Sales Project1
+
 '''
 🛍️ Retail Sales Data Analysis using SQL
 ________________________________________
@@ -87,7 +88,8 @@ ________________________________________
 SELECT COUNT(DISTINCT customer_id) AS total_customers
 FROM retail_sales;
 ________________________________________
-3. Retrieve all sales on '2022-11-05'
+3. Retrieve all sales on '2022-11-05'?
+   
 SELECT *
 FROM retail_sales
 WHERE sale_date = '2022-11-05';
