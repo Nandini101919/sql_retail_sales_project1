@@ -54,6 +54,7 @@ USE project;
 SELECT * FROM project.retail_sales;
 SELECT * FROM project.retail_sales LIMIT 10;
 SELECT COUNT(*) FROM project.retail_sales;
+
 This step:
 •	Creates the database
 •	Selects the database
@@ -62,6 +63,7 @@ ________________________________________
 2️⃣ Data Cleaning
 
 🔍 Checking for NULL Values
+
 SELECT * FROM project.retail_sales
 WHERE sale_date IS NULL;
 DELETE FROM project.retail_sales
@@ -73,6 +75,7 @@ WHERE transactions_id IS NULL
    OR quantity IS NULL
    OR cogs IS NULL
    OR total_sale IS NULL;
+   
 ✅ Result:
 No NULL values were found in the dataset after cleaning.
 ________________________________________
@@ -83,6 +86,7 @@ Some basic exploration queries:
 •	Unique customers
 •	Available categories
 •	Date-wise filtering
+
 Example:
 SELECT COUNT(*) AS total_sale FROM retail_sales;
 SELECT DISTINCT category FROM retail_sales;
