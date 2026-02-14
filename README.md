@@ -238,7 +238,7 @@ ORDER BY category;
     
 ◉SELECT customer_id,
 
-       SUM(total_sale) AS total_sales
+SUM(total_sale) AS total_sales
        
 FROM retail_sales
 
