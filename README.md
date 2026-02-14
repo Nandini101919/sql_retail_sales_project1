@@ -2,15 +2,15 @@
 
 🛍️ **Retail Sales Data Analysis using SQL**
 
-📌 ### Project Title ∶∶
+📌 **Project Title ∶∶**
 
 Retail Sales Data Analysis using SQL
 
-🎯 Project Level ∶∶
+🎯 **Project Level ∶∶**
 
 Beginner to Intermediate Level (B.Tech / Student Level Project)
 
-💾 Database Used ∶∶
+💾 **Database Used ∶∶**
 
 MySQL
 
@@ -18,7 +18,7 @@ Database Name: project
 
 Table Name: retail_sales
 
-📘 Project Overview ∶∶
+📘 **Project Overview ∶∶**
 
 This project focuses on analyzing retail sales data using SQL.
 The main goal is to perform data cleaning, exploration, and analysis to extract meaningful insights such as:
@@ -31,7 +31,7 @@ The main goal is to perform data cleaning, exploration, and analysis to extract 
 
 ◉Transaction trends
 
-Using SQL queries, we:
+**Using SQL queries, i:**
 
 ◉Created a database
 
@@ -45,7 +45,7 @@ Using SQL queries, we:
 
 This project helps in understanding real-world data handling and business intelligence using SQL.
 
-🎯 Project Objectives ∶∶
+🎯 **Project Objectives ∶∶**
 
 ◉Create and manage a retail sales database
 
@@ -59,7 +59,7 @@ This project helps in understanding real-world data handling and business intell
 
 ◉Identify top customers and best-performing categories
 
-🏗️ Project Structure ∶∶
+🏗️ **Project Structure ∶∶**
 
 ◉Database Setup
 
@@ -69,11 +69,11 @@ This project helps in understanding real-world data handling and business intell
 
 ◉Data Analysis
 
-Findings & Insights ∶∶
+**Findings & Insights ∶∶**
 
-1️⃣ Database Setup (With Code) ∶∶
+1️⃣ **Database Setup (With Code) ∶∶**
 
-       '''sql
+       sql
        ◉CREATE DATABASE project;
 
        SHOW DATABASES;
@@ -85,7 +85,7 @@ Findings & Insights ∶∶
        SELECT * FROM project.retail_sales LIMIT 10;
 
        SELECT COUNT(*) FROM project.retail_sales;
-       '''
+       
 
 
 This step:
@@ -96,10 +96,10 @@ This step:
 
 ◉Checks data inside the table
 
-2️⃣ Data Cleaning ∶∶
+2️⃣** Data Cleaning ∶∶**
 
 🔍 Checking for NULL Values
-       '''sql
+       sql
        ◉SELECT *
 
        FROM project.retail_sales
@@ -125,53 +125,53 @@ This step:
        OR cogs IS NULL
    
        OR total_sale IS NULL;
-       '''
+       
 
 
-✅ Result:
+✅ **Result:**
 
 No NULL values were found in the dataset after cleaning.
 
 
-3️⃣ Data Exploration ∶∶
+3️⃣ **Data Exploration ∶∶**
 
 
 Basic exploration queries:
        
-        '''sql
+        sql
        ◉SELECT COUNT(*) AS total_sale 
 
        FROM retail_sales;
-       '''
-       '''sql
+       
+       
        SELECT COUNT(DISTINCT customer_id) AS total_customers
 
        FROM retail_sales;
-       '''
-       '''sql
+       
+       
        SELECT DISTINCT category 
 
        FROM retail_sales;
-       '''
+       
 
-4️⃣ Data Analysis (10 Important Questions with Queries) ∶∶
+4️⃣**Data Analysis (10 Important Questions with Queries) ∶∶**
 
-1. How many total sales are there?
-        '''sql
+1. **How many total sales are there?**
+        sql
        ◉SELECT COUNT(*) AS total_sales
 
        FROM retail_sales;
-       '''
+       
 
-2. How many unique customers are there?
-       '''sql
+2.**How many unique customers are there?**
+       sql
        ◉SELECT COUNT(DISTINCT customer_id) AS total_customers
 
        FROM retail_sales;
-       '''
+       
 
-3. Retrieve all sales on '2022-11-05'
-   
+3. **Retrieve all sales on '2022-11-05'**
+       sql
        ◉SELECT *
 
        FROM retail_sales
@@ -179,8 +179,8 @@ Basic exploration queries:
        WHERE sale_date = '2022-11-05';
 
 
-4. Total sales amount for each category
-
+4. **Total sales amount for each category**
+       sql
        ◉SELECT category,
 
        SUM(total_sale) AS total_sales
@@ -190,8 +190,8 @@ Basic exploration queries:
        GROUP BY category;
 
 
-5. Clothing category transactions with quantity > 3 in Nov 2022
-   
+5. **Clothing category transactions with quantity > 3 in Nov 2022**
+       sql
        ◉SELECT *
 
        FROM retail_sales
@@ -203,8 +203,8 @@ Basic exploration queries:
          AND sale_date BETWEEN '2022-11-01' AND '2022-11-30';
   
 
-6. Average age of customers in Beauty category
-    
+6. **Average age of customers in Beauty category**
+        sql
         ◉SELECT ROUND(AVG(age),2) AS avg_age
 
         FROM retail_sales
@@ -212,8 +212,8 @@ Basic exploration queries:
         WHERE category = 'Beauty';
 
 
-7. Transactions where total_sale > 1000
-    
+7. **Transactions where total_sale > 1000**
+       sql
        ◉SELECT *
 
        FROM retail_sales
@@ -221,8 +221,8 @@ Basic exploration queries:
        WHERE total_sale > 1000;
 
 
-8. Total transactions by gender in each category
-    
+8. **Total transactions by gender in each category**
+       sql
        ◉SELECT category,
 
               gender,
@@ -236,8 +236,8 @@ Basic exploration queries:
         ORDER BY category;
 
 
-9. Top 5 customers by highest total sales
-    
+9. **Top 5 customers by highest total sales**
+         sql
          ◉SELECT customer_id,
 
           SUM(total_sale) AS total_sales
@@ -251,8 +251,8 @@ Basic exploration queries:
           LIMIT 5;
 
 
-10. Unique customers per category
-    
+10. **Unique customers per category**
+          sql
           ◉SELECT category,
 
           COUNT(DISTINCT customer_id) AS unique_customers
@@ -262,7 +262,7 @@ Basic exploration queries:
           GROUP BY category;
 
 
-📊 Data Analysis & Findings ∶∶
+📊 **Data Analysis & Findings ∶∶**
 
 ◉After running the above queries, we observed:
 
@@ -285,7 +285,7 @@ Basic exploration queries:
 ◉Gender-wise category purchases show buying pattern differences.
 
 
-🎉 Conclusion ∶∶
+🎉**Conclusion ∶∶**
 
 
 This project demonstrates how SQL can be used for:
