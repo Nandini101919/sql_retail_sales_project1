@@ -179,13 +179,13 @@ WHERE sale_date = '2022-11-05';
 
 6. Total sales amount for each category
    
-◉SELECT category,
+      ◉SELECT category,
 
        SUM(total_sale) AS total_sales
        
-FROM retail_sales
+       FROM retail_sales
 
-GROUP BY category;
+       GROUP BY category;
 
 
 8. Clothing category transactions with quantity > 3 in Nov 2022
