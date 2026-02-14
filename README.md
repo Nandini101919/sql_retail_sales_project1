@@ -1,5 +1,6 @@
 '''
 🛍️ Retail Sales Data Analysis using SQL
+
 📌 Project Title
 
 Retail Sales Data Analysis using SQL
@@ -61,6 +62,7 @@ Data Analysis
 Findings & Insights
 
 1️⃣ Database Setup (With Code)
+'''
 CREATE DATABASE project;
 SHOW DATABASES;
 USE project;
@@ -68,7 +70,7 @@ USE project;
 SELECT * FROM project.retail_sales;
 SELECT * FROM project.retail_sales LIMIT 10;
 SELECT COUNT(*) FROM project.retail_sales;
-
+'''
 
 This step:
 
@@ -79,7 +81,9 @@ Selects the database
 Checks data inside the table
 
 2️⃣ Data Cleaning
+
 🔍 Checking for NULL Values
+'''
 SELECT * FROM project.retail_sales
 WHERE sale_date IS NULL;
 
@@ -92,7 +96,7 @@ WHERE transactions_id IS NULL
    OR quantity IS NULL
    OR cogs IS NULL
    OR total_sale IS NULL;
-
+'''
 ✅ Result:
 
 No NULL values were found in the dataset after cleaning.
@@ -110,70 +114,81 @@ Available categories
 Date-wise filtering
 
 Example:
-
+'''
 SELECT COUNT(*) AS total_sale FROM retail_sales;
 
 SELECT DISTINCT category FROM retail_sales;
-
+'''
 4️⃣ Data Analysis (10 Important Questions with Queries)
+
 1. How many total sales are there?
+'''
 SELECT COUNT(*) AS total_sales
 FROM retail_sales;
-
-2. How many unique customers are there?
+'''
+3. How many unique customers are there?
+'''
 SELECT COUNT(DISTINCT customer_id) AS total_customers
 FROM retail_sales;
-
-3. Retrieve all sales on '2022-11-05'
+'''
+5. Retrieve all sales on '2022-11-05'
+'''
 SELECT *
 FROM retail_sales
 WHERE sale_date = '2022-11-05';
-
-4. Total sales amount for each category
+'''
+7. Total sales amount for each category
+'''
 SELECT category,
        SUM(total_sale) AS total_sales
 FROM retail_sales
 GROUP BY category;
-
-5. Clothing category transactions with quantity > 3 in Nov 2022
+'''
+9. Clothing category transactions with quantity > 3 in Nov 2022
+'''
 SELECT *
 FROM retail_sales
 WHERE category = 'Clothing'
   AND quantity > 3
   AND sale_date BETWEEN '2022-11-01' AND '2022-11-30';
-
-6. Average age of customers in Beauty category
+'''
+10. Average age of customers in Beauty category
+'''
 SELECT ROUND(AVG(age),2) AS avg_age
 FROM retail_sales
 WHERE category = 'Beauty';
-
-7. Transactions where total_sale > 1000
+'''
+11. Transactions where total_sale > 1000
+'''
 SELECT *
 FROM retail_sales
 WHERE total_sale > 1000;
-
-8. Total transactions by gender in each category
+'''
+12. Total transactions by gender in each category
+'''
 SELECT category,
        gender,
        COUNT(*) AS total_transactions
 FROM retail_sales
 GROUP BY category, gender
 ORDER BY category;
-
-9. Top 5 customers by highest total sales
+'''
+13. Top 5 customers by highest total sales
+'''
 SELECT customer_id,
        SUM(total_sale) AS total_sales
 FROM retail_sales
 GROUP BY customer_id
 ORDER BY total_sales DESC
 LIMIT 5;
-
-10. Unique customers per category
+'''
+14. Unique customers per category
+'''
 SELECT category,
        COUNT(DISTINCT customer_id) AS unique_customers
 FROM retail_sales
 GROUP BY category;
-
+'''
 📊 Data Analysis & Findings
 
 After running the above queries, we observed:
