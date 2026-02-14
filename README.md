@@ -1,6 +1,6 @@
 '''
 
-###🛍️ Retail Sales Data Analysis using SQL
+🛍️ Retail Sales Data Analysis using SQL
 
 📌 Project Title ∶∶
 
@@ -73,7 +73,7 @@ Findings & Insights ∶∶
 
 1️⃣ Database Setup (With Code) ∶∶
 
-
+       '''sql
        ◉CREATE DATABASE project;
 
        SHOW DATABASES;
@@ -85,7 +85,7 @@ Findings & Insights ∶∶
        SELECT * FROM project.retail_sales LIMIT 10;
 
        SELECT COUNT(*) FROM project.retail_sales;
-
+       '''
 
 
 This step:
@@ -99,7 +99,7 @@ This step:
 2️⃣ Data Cleaning ∶∶
 
 🔍 Checking for NULL Values
-
+       '''sql
        ◉SELECT *
 
        FROM project.retail_sales
@@ -125,7 +125,7 @@ This step:
        OR cogs IS NULL
    
        OR total_sale IS NULL;
-
+       '''
 
 
 ✅ Result:
@@ -137,38 +137,38 @@ No NULL values were found in the dataset after cleaning.
 
 
 Basic exploration queries:
-
-
+       
+        '''sql
        ◉SELECT COUNT(*) AS total_sale 
 
        FROM retail_sales;
-
-
+       '''
+       '''sql
        SELECT COUNT(DISTINCT customer_id) AS total_customers
 
        FROM retail_sales;
-
-
+       '''
+       '''sql
        SELECT DISTINCT category 
 
        FROM retail_sales;
-
+       '''
 
 4️⃣ Data Analysis (10 Important Questions with Queries) ∶∶
 
 1. How many total sales are there?
-   
+        '''sql
        ◉SELECT COUNT(*) AS total_sales
 
        FROM retail_sales;
-
+       '''
 
 2. How many unique customers are there?
-   
+       '''sql
        ◉SELECT COUNT(DISTINCT customer_id) AS total_customers
 
        FROM retail_sales;
-
+       '''
 
 3. Retrieve all sales on '2022-11-05'
    
