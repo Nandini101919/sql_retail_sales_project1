@@ -4,24 +4,24 @@
 
 📌 Project Title
 
-   Retail Sales Data Analysis using SQL
+    Retail Sales Data Analysis using SQL
 
 🎯 Project Level
 
-       Beginner to Intermediate Level (B.Tech / Student Level Project)
+    Beginner to Intermediate Level (B.Tech / Student Level Project)
 
 💾 Database Used
 
-       MySQL
+    MySQL
 
-       Database Name: project
+    Database Name: project
 
-       Table Name: retail_sales
+    Table Name: retail_sales
 
 📘 Project Overview
 
-This project focuses on analyzing retail sales data using SQL.
-The main goal is to perform data cleaning, exploration, and analysis to extract meaningful insights such as:
+    This project focuses on analyzing retail sales data using SQL.
+    The main goal is to perform data cleaning, exploration, and analysis to extract meaningful insights such as:
 
 ◉Total sales
 
@@ -253,13 +253,13 @@ Basic exploration queries:
 
 10. Unique customers per category
     
-       ◉SELECT category,
+          ◉SELECT category,
 
-       COUNT(DISTINCT customer_id) AS unique_customers
+          COUNT(DISTINCT customer_id) AS unique_customers
        
-       FROM retail_sales
+          FROM retail_sales
 
-       GROUP BY category;
+          GROUP BY category;
 
 
 📊 Data Analysis & Findings
