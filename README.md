@@ -4,19 +4,19 @@
 
 📌 Project Title
 
-Retail Sales Data Analysis using SQL
+       Retail Sales Data Analysis using SQL
 
 🎯 Project Level
 
-Beginner to Intermediate Level (B.Tech / Student Level Project)
+       Beginner to Intermediate Level (B.Tech / Student Level Project)
 
 💾 Database Used
 
-MySQL
+       MySQL
 
-Database Name: project
+       Database Name: project
 
-Table Name: retail_sales
+       Table Name: retail_sales
 
 📘 Project Overview
 
