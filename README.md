@@ -2,26 +2,26 @@
 
 🛍️ Retail Sales Data Analysis using SQL
 
-📌 Project Title
+📌 Project Title ∶∶
 
-    Retail Sales Data Analysis using SQL
+Retail Sales Data Analysis using SQL
 
-🎯 Project Level
+🎯 Project Level ∶∶
 
-    Beginner to Intermediate Level (B.Tech / Student Level Project)
+Beginner to Intermediate Level (B.Tech / Student Level Project)
 
-💾 Database Used
+💾 Database Used ∶∶
 
-    MySQL
+MySQL
 
-    Database Name: project
+Database Name: project
 
-    Table Name: retail_sales
+Table Name: retail_sales
 
-📘 Project Overview
+📘 Project Overview ∶∶
 
-    This project focuses on analyzing retail sales data using SQL.
-    The main goal is to perform data cleaning, exploration, and analysis to extract meaningful insights such as:
+This project focuses on analyzing retail sales data using SQL.
+The main goal is to perform data cleaning, exploration, and analysis to extract meaningful insights such as:
 
 ◉Total sales
 
@@ -45,7 +45,7 @@ Using SQL queries, we:
 
 This project helps in understanding real-world data handling and business intelligence using SQL.
 
-🎯 Project Objectives
+🎯 Project Objectives ∶∶
 
 ◉Create and manage a retail sales database
 
@@ -59,7 +59,7 @@ This project helps in understanding real-world data handling and business intell
 
 ◉Identify top customers and best-performing categories
 
-🏗️ Project Structure
+🏗️ Project Structure ∶∶
 
 ◉Database Setup
 
@@ -69,9 +69,9 @@ This project helps in understanding real-world data handling and business intell
 
 ◉Data Analysis
 
-Findings & Insights
+Findings & Insights ∶∶
 
-1️⃣ Database Setup (With Code)
+1️⃣ Database Setup (With Code) ∶∶
 
 
        ◉CREATE DATABASE project;
@@ -96,7 +96,7 @@ This step:
 
 ◉Checks data inside the table
 
-2️⃣ Data Cleaning
+2️⃣ Data Cleaning ∶∶
 
 🔍 Checking for NULL Values
 
@@ -133,7 +133,7 @@ This step:
 No NULL values were found in the dataset after cleaning.
 
 
-3️⃣ Data Exploration
+3️⃣ Data Exploration ∶∶
 
 
 Basic exploration queries:
@@ -154,7 +154,7 @@ Basic exploration queries:
        FROM retail_sales;
 
 
-4️⃣ Data Analysis (10 Important Questions with Queries)
+4️⃣ Data Analysis (10 Important Questions with Queries) ∶∶
 
 1. How many total sales are there?
    
@@ -262,7 +262,7 @@ Basic exploration queries:
           GROUP BY category;
 
 
-📊 Data Analysis & Findings
+📊 Data Analysis & Findings ∶∶
 
 ◉After running the above queries, we observed:
 
@@ -285,7 +285,7 @@ Basic exploration queries:
 ◉Gender-wise category purchases show buying pattern differences.
 
 
-🎉 Conclusion
+🎉 Conclusion ∶∶
 
 
 This project demonstrates how SQL can be used for:
