@@ -72,17 +72,17 @@ Findings & Insights
 1️⃣ Database Setup (With Code)
 
 
-◉CREATE DATABASE project;
+       ◉CREATE DATABASE project;
 
-SHOW DATABASES;
+       SHOW DATABASES;
 
-USE project;
+       USE project;
 
-SELECT * FROM project.retail_sales;
+       SELECT * FROM project.retail_sales;
 
-SELECT * FROM project.retail_sales LIMIT 10;
+       SELECT * FROM project.retail_sales LIMIT 10;
 
-SELECT COUNT(*) FROM project.retail_sales;
+       SELECT COUNT(*) FROM project.retail_sales;
 
 
 
@@ -98,31 +98,31 @@ This step:
 
 🔍 Checking for NULL Values
 
-◉SELECT *
+       ◉SELECT *
 
-FROM project.retail_sales
+       FROM project.retail_sales
 
-WHERE sale_date IS NULL;
+       WHERE sale_date IS NULL;
 
 
 
-DELETE FROM project.retail_sales
+       DELETE FROM project.retail_sales
 
-WHERE transactions_id IS NULL
+       WHERE transactions_id IS NULL
 
-   OR sale_date IS NULL
+       OR sale_date IS NULL
    
-   OR sale_time IS NULL
+       OR sale_time IS NULL
    
-   OR gender IS NULL
+       OR gender IS NULL
    
-   OR category IS NULL
+        OR category IS NULL
    
-   OR quantity IS NULL
+       OR quantity IS NULL
    
-   OR cogs IS NULL
+       OR cogs IS NULL
    
-   OR total_sale IS NULL;
+       OR total_sale IS NULL;
 
 
 
@@ -137,49 +137,49 @@ No NULL values were found in the dataset after cleaning.
 Basic exploration queries:
 
 
-◉SELECT COUNT(*) AS total_sale 
+       ◉SELECT COUNT(*) AS total_sale 
 
-FROM retail_sales;
-
-
-SELECT COUNT(DISTINCT customer_id) AS total_customers
-
-FROM retail_sales;
+       FROM retail_sales;
 
 
-SELECT DISTINCT category 
+       SELECT COUNT(DISTINCT customer_id) AS total_customers
 
-FROM retail_sales;
+       FROM retail_sales;
+
+
+       SELECT DISTINCT category 
+
+       FROM retail_sales;
 
 
 4️⃣ Data Analysis (10 Important Questions with Queries)
 
 1. How many total sales are there?
    
-◉SELECT COUNT(*) AS total_sales
+       ◉SELECT COUNT(*) AS total_sales
 
-FROM retail_sales;
+       FROM retail_sales;
 
 
 2. How many unique customers are there?
    
-◉SELECT COUNT(DISTINCT customer_id) AS total_customers
+       ◉SELECT COUNT(DISTINCT customer_id) AS total_customers
 
-FROM retail_sales;
+       FROM retail_sales;
 
 
-4. Retrieve all sales on '2022-11-05'
+3. Retrieve all sales on '2022-11-05'
    
-◉SELECT *
+       ◉SELECT *
 
-FROM retail_sales
+       FROM retail_sales
 
-WHERE sale_date = '2022-11-05';
+       WHERE sale_date = '2022-11-05';
 
 
-6. Total sales amount for each category
-   
-      ◉SELECT category,
+4. Total sales amount for each category
+
+       ◉SELECT category,
 
        SUM(total_sale) AS total_sales
        
@@ -188,76 +188,76 @@ WHERE sale_date = '2022-11-05';
        GROUP BY category;
 
 
-8. Clothing category transactions with quantity > 3 in Nov 2022
+5. Clothing category transactions with quantity > 3 in Nov 2022
    
-◉SELECT *
+       ◉SELECT *
 
-FROM retail_sales
+       FROM retail_sales
 
-WHERE category = 'Clothing'
+       WHERE category = 'Clothing'
 
-  AND quantity > 3
+         AND quantity > 3
   
-  AND sale_date BETWEEN '2022-11-01' AND '2022-11-30';
+         AND sale_date BETWEEN '2022-11-01' AND '2022-11-30';
   
 
-10. Average age of customers in Beauty category
+6. Average age of customers in Beauty category
     
-◉SELECT ROUND(AVG(age),2) AS avg_age
+        ◉SELECT ROUND(AVG(age),2) AS avg_age
 
-FROM retail_sales
+        FROM retail_sales
 
-WHERE category = 'Beauty';
+        WHERE category = 'Beauty';
 
 
-12. Transactions where total_sale > 1000
+7. Transactions where total_sale > 1000
     
-◉SELECT *
+       ◉SELECT *
 
-FROM retail_sales
+       FROM retail_sales
 
-WHERE total_sale > 1000;
+       WHERE total_sale > 1000;
 
 
-14. Total transactions by gender in each category
+8. Total transactions by gender in each category
     
-◉SELECT category,
+       ◉SELECT category,
 
-       gender,
+              gender,
        
-       COUNT(*) AS total_transactions
+              COUNT(*) AS total_transactions
        
-FROM retail_sales
+        FROM retail_sales
 
-GROUP BY category, gender
+        GROUP BY category, gender
 
-ORDER BY category;
+        ORDER BY category;
 
 
-16. Top 5 customers by highest total sales
+9. Top 5 customers by highest total sales
     
-◉SELECT customer_id,
+         ◉SELECT customer_id,
 
-SUM(total_sale) AS total_sales
+          SUM(total_sale) AS total_sales
        
-FROM retail_sales
+          FROM retail_sales
 
-GROUP BY customer_id
+          GROUP BY customer_id
 
-ORDER BY total_sales DESC
+          ORDER BY total_sales DESC
 
-LIMIT 5;
+          LIMIT 5;
 
 
-18. Unique customers per category
+10. Unique customers per category
     
-◉SELECT category,
+       ◉SELECT category,
 
        COUNT(DISTINCT customer_id) AS unique_customers
        
-FROM retail_sales
+       FROM retail_sales
 
-GROUP BY category;
+       GROUP BY category;
 
 
 📊 Data Analysis & Findings
