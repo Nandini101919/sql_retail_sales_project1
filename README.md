@@ -96,7 +96,7 @@ This step:
 
 ◉Checks data inside the table
 
-2️⃣** Data Cleaning ∶∶**
+2️⃣**Data Cleaning ∶∶**
 
 🔍 Checking for NULL Values
 
