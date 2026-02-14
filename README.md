@@ -8,7 +8,7 @@ Retail Sales Data Analysis using SQL
 
 Beginner to Intermediate Level (B.Tech / Student Level Project)
 
-🗄️ Database Used
+💾 Database Used
 
 MySQL
 
@@ -16,7 +16,7 @@ Database Name: project
 
 Table Name: retail_sales
 
-📖 Project Overview
+📘 Project Overview
 
 This project focuses on analyzing retail sales data using SQL.
 The main goal is to perform data cleaning, exploration, and analysis to extract meaningful insights such as:
@@ -283,7 +283,7 @@ Basic exploration queries:
 ◉Gender-wise category purchases show buying pattern differences.
 
 
-🏁 Conclusion
+🎉 Conclusion
 
 
 This project demonstrates how SQL can be used for:
