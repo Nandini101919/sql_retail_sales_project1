@@ -70,12 +70,17 @@ Data Analysis
 Findings & Insights
 
 1️⃣ Database Setup (With Code)
+
 CREATE DATABASE project;
+
 SHOW DATABASES;
+
 USE project;
 
 SELECT * FROM project.retail_sales;
+
 SELECT * FROM project.retail_sales LIMIT 10;
+
 SELECT COUNT(*) FROM project.retail_sales;
 
 
