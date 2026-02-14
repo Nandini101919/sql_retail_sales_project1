@@ -1,6 +1,6 @@
 '''
 
-🛍️ Retail Sales Data Analysis using SQL
+🛍️ Retail Sales Data Analysis Using SQL
 
 📌 Project Title
 
