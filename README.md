@@ -99,6 +99,7 @@ This step:
 2️⃣** Data Cleaning ∶∶**
 
 🔍 Checking for NULL Values
+
        sql
        ◉SELECT *
 
@@ -137,6 +138,7 @@ No NULL values were found in the dataset after cleaning.
 
 
 Basic exploration queries:
+
        
         sql
        ◉SELECT COUNT(*) AS total_sale 
@@ -157,6 +159,7 @@ Basic exploration queries:
 4️⃣**Data Analysis (10 Important Questions with Queries) ∶∶**
 
 1. **How many total sales are there?**
+   
         sql
        ◉SELECT COUNT(*) AS total_sales
 
@@ -164,6 +167,7 @@ Basic exploration queries:
        
 
 2.**How many unique customers are there?**
+
        sql
        ◉SELECT COUNT(DISTINCT customer_id) AS total_customers
 
@@ -171,6 +175,7 @@ Basic exploration queries:
        
 
 3. **Retrieve all sales on '2022-11-05'**
+   
        sql
        ◉SELECT *
 
@@ -180,6 +185,7 @@ Basic exploration queries:
 
 
 4. **Total sales amount for each category**
+   
        sql
        ◉SELECT category,
 
@@ -191,6 +197,7 @@ Basic exploration queries:
 
 
 5. **Clothing category transactions with quantity > 3 in Nov 2022**
+   
        sql
        ◉SELECT *
 
@@ -204,6 +211,7 @@ Basic exploration queries:
   
 
 6. **Average age of customers in Beauty category**
+    
         sql
         ◉SELECT ROUND(AVG(age),2) AS avg_age
 
@@ -213,6 +221,7 @@ Basic exploration queries:
 
 
 7. **Transactions where total_sale > 1000**
+    
        sql
        ◉SELECT *
 
@@ -222,6 +231,7 @@ Basic exploration queries:
 
 
 8. **Total transactions by gender in each category**
+    
        sql
        ◉SELECT category,
 
@@ -237,6 +247,7 @@ Basic exploration queries:
 
 
 9. **Top 5 customers by highest total sales**
+    
          sql
          ◉SELECT customer_id,
 
@@ -252,6 +263,7 @@ Basic exploration queries:
 
 
 10. **Unique customers per category**
+    
           sql
           ◉SELECT category,
 
